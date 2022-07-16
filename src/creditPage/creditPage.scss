@@ -1,0 +1,142 @@
+.modalSorryContent{
+    .flex{
+        display: flex;
+        .warning{
+            font-size: 20px;
+            color: #FFA000;
+            align-self: center;
+            margin-right: 20px;
+        }
+        h1{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 36px;
+        }
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 5px 0 0 40px;
+    }
+    button{
+        height: 40px;
+        border-radius: 32px;
+        border: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 8px 16px 8px 16px;
+        background-color: #800080;
+        color: white;
+        margin-top: 20px;
+        &:hover{
+            color: white;
+        }
+    }
+}
+.modalIncoiceContent{
+    h1{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    .flexContainer{
+        margin: 20px 0;
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            span{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+            .bold{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+            .bolder{
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+            .c1000{
+                width: 180px;
+                align-self: center;
+                color: #800080;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+            }
+            .c1200{
+                width: 100px;
+                align-self: center;
+            }
+            .small{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #8F8F8F;
+            }
+            
+        }
+    }
+    p{
+        text-align: center;
+    }
+    button{
+        height: 40px;
+        border-radius: 32px;
+        padding: 8px 16px 8px 16px;
+        background-color: #800080;
+        color: white;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        margin: 20px auto;
+    }
+}
+@media screen and (min-width:360px) {
+    .modalSorryContent{
+        button{
+            width: 336px;
+        }
+    }
+    .modalIncoiceContent{
+        .flex{
+            width: 508px;
+            .noFlex{
+                display: block;
+            }
+        }
+        button{
+            width: 264px;
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+    .modalSorryContent{
+        button{
+            width: 248px;
+        }
+    }
+    .modalIncoiceContent{
+        .flex{
+            // width: 312px;
+            width: 100%;
+            flex-direction: column;
+            // justify-content: center;
+            text-align: center;
+            .noFlex{
+                display: flex;
+            }
+        }
+        button{
+            width: 248px;
+        }
+    }
+}

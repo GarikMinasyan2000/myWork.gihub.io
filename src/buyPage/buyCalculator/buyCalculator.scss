@@ -1,0 +1,232 @@
+.calcSection{
+    background-color: #F5F5F5;
+    padding-bottom:50px ;
+    .title{
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        text-align: center;
+        margin-bottom: 40px ;
+        padding-top: 64px;
+    }
+    .calcFull{
+        margin: 50px auto 0  auto;
+        width: 936px;
+        box-shadow: 0px 16px 32px 0px #2525261A;
+        background-color: white;
+        border-radius: 8px;
+        border-bottom: 4px solid #800080;
+        padding: 32px;
+        .calculatorBuy{
+            position: relative;
+            .inputs{
+                overflow: hidden;
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    width: max-content;
+                }
+                input{
+                    height: 64px;
+                    border-radius: 4px;
+                    padding: 8px 12px 8px 16px;
+                    border: #E0E0E0 1px solid;
+                }
+                label{
+                    position: relative;
+                    text-align: right;
+                    .display{
+                        position: absolute;
+                        top: 20px;
+                        left: 25px;
+                        font-size: 24px;
+                        display: block;
+                        pointer-events: none;
+                    }
+                    .none{
+                        display: none;
+                    }
+                    select{
+                        appearance: none;
+                        text-align: center;
+                    }
+                    .dropDown{
+                        color: #666666;
+                        position: absolute;
+                        right: 10px;
+                        top: 35%;
+                        text-align: end;
+                        pointer-events: none;
+                        transform: rotate(90deg);
+                        transition-duration: 300ms;
+                    }
+                    .activeToggler{
+                        transform: rotate(0deg);
+                        transition-duration: 300ms;
+                    }
+                    .selectToken{
+                        height: 64px;
+                        width: 148px;
+                        border-radius: 4px;
+                        padding: 8px 12px 8px 16px;
+                        border: #E0E0E0 1px solid;
+                        appearance: none;
+                        
+                    }
+                }
+                
+            }
+            .rovno{
+                width: max-content;
+                color: #666666;
+                font-size: 11px;
+                position: absolute;
+                top: 72px;
+                left: 46.5%;
+            }
+                
+            
+        }
+        .calcInfoBuy{
+            border: 2px solid #800080;
+            background-color: #FFF2FF;
+            border-radius: 12px;
+            padding: 24px;
+            justify-content: center;
+            margin: 52px auto 24px auto;
+            .flexInfo{
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+
+                span{
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    align-self: center;
+                }
+                .c20{
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    color: #800080;
+                }
+            }
+            .link{
+                text-align: center;
+                margin-top: 24px;
+                a{
+                    color: #800080;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+        .btnBuy{
+            text-align: center;
+            button{
+                height: 56px;
+                width: 269px;
+                border-radius: 32px;
+                padding: 14px 32px 14px 32px;
+                background-color: #800080;
+                color: white;
+                border: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:360px){
+    .calcSection{
+
+        .inputs{
+            label{
+                width: 148px;
+    
+                margin-left: 20px;
+            }
+        }
+        
+    }
+}
+@media screen and (min-width:1280px){
+    .calcSection{
+        .calcFull{
+            width: 936px;
+        }
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .calcSection{
+        .calcInfoBuy{
+            width: 394px;
+        }
+        .secondP{
+            margin-left: 20px;
+        }
+    }
+}
+@media screen  and (min-width:768px){
+    .calcSection{
+        .inputs{
+            .seconddiv{
+                justify-content: center;
+            }
+        }
+        
+    }      
+}
+@media screen  and (max-width:768px){
+    .calcSection{
+        .calculatorBuy{
+            margin-left: 12px;
+        }
+        .inputs{
+            .seconddiv{
+                justify-content: flex-start;
+            }
+        }
+        .calcFull{
+            width: 90%;
+        }
+        .rovno{
+                display: none;
+            }
+    }      
+}
+@media screen  and (max-width:360px){
+    .calcSection{
+        width: 100%;
+        background-color: white;
+        .calculatorBuy{
+            margin-left: -10px;
+            
+        }
+        .calcFull{
+            width: 100%;
+            border: none;
+            background-color: #F5F5F5;
+            padding: 26px;
+            .inputs{
+                input{
+                    margin: 0 1px;
+                    width: 49%;
+                }
+                label{
+                    width: 49%;
+                    margin: 0 1px;
+                }
+            }
+            
+        }
+        .calcInfoBuy{
+            width: 100%;
+
+        }
+    }
+}

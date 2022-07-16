@@ -1,0 +1,133 @@
+.loginPage{
+    background-color: #E5E5E5;
+    background-image: url('../../../images/homePageImages/loginBack.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 0;
+    .loginContainer{
+        box-shadow: 0px 16px 32px 0px #2525261A;
+        width: 456px;
+        border-radius: 16px;
+        padding: 32px;
+        background-color: white;
+        .input{
+            height: 64px;
+            width: 100%;
+            border-radius: 4px;
+            padding: 8px 12px 8px 16px;
+            outline:none;
+            caret-color:#800080;
+        }
+        .input:focus{
+            border:1px solid  #800080;
+        }
+        
+        .title{
+            display: flex;
+            justify-content: space-between;
+            h1{
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 42px;
+            }
+            button{
+                font-size: 16px;
+                font-weight: 500;
+                border: 1px solid #B8B8B8;
+                line-height: 24px;
+                background-color: white;
+                height: 48px;
+                width: 135px;
+                border-radius: 32px;
+                padding: 12px 24px 12px 24px;
+            }
+        }
+        .mailInp{
+            margin-top: 35px;
+            p{
+                padding-left: 12px;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+        }
+        .passInp{
+            position: relative;
+            margin: 36px 0 20px 0 ;
+            .passwordCont{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-family: Open Sans;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    padding-left: 12px;
+                    margin-bottom: 8px;
+                }
+                .forgot{
+                    cursor: pointer;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: #800080;
+                }
+            }
+            .eyeCont{
+                position: absolute;
+                right: 20px;
+                top: 53px;
+                
+                .eye{
+                    font-size: 24px;
+                    cursor: pointer;
+                }
+                .none{
+                    display: none;
+                }
+            }
+        }
+        .loginBtn{
+            margin-top: 44px;
+            height: 56px;
+            width: 100%;
+            border-radius: 32px;
+            padding: 14px 32px 14px 32px;
+            background-color: #800080;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            color: white;
+            border: none;
+        }
+    }
+    .notError{
+        border: 1px solid #800080;
+
+    }
+    .error{
+        border: 1px solid #FFA000;
+    }
+    .errorText{
+        color: #FFA000;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+@media screen and(max-width:360px) {
+    .loginPage{
+        background-image: none;
+        .loginContainer{
+            width: 312px;
+        }
+    }
+}

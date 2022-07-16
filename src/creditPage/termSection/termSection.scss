@@ -1,0 +1,196 @@
+.term{
+    margin: 60px 0;
+    .title{
+        display: flex;
+        justify-content: center;
+        h1{
+            font-weight: 400;
+            line-height: 56px;
+        }
+        img{
+                margin: 0 0 10px 10px;
+                align-self: center;
+        }
+    }
+    p{
+        text-align: center;
+        margin: 40px auto;
+        max-width: 936px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    .termCartsCont{
+
+        .termCarts{
+            padding: 0;
+            height: 304px;
+            border-radius: 8px;
+            box-shadow: 0px 16px 32px 0px #2525261A;
+            overflow: hidden;
+            h1{
+                color: white;
+                text-align: center;
+                padding: 16px 0;
+                // padding:16px 87px 12px 87px;
+                font-weight: 700;
+                line-height: 36px;
+                
+            }
+            .months{
+                margin: 30px 0 0 0  ;
+                .bold{
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                }
+                .small{
+                    color: gray ;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                }
+            }
+        }
+        .simple{
+            border-bottom: 4px solid #800080;
+            h1{
+                background: #800080;
+            }
+        }
+        .silver{
+            border-bottom:4px solid #828080;
+
+            h1{
+                background: #828080;
+            }
+        }
+        .gold{
+            border-bottom:4px solid #EAA800;
+            h1{
+                background: #EAA800;
+            }
+        }
+        .platinum{
+            border-bottom:4px solid #292929;
+            h1{
+                background: #292929;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .term{
+        .title{
+            h1{
+                font-size: 48px;
+            }
+            img{
+                width: 157.4748077392578px;
+                height: 35.17203903198242px;
+            }
+        }
+        .termCartsCont{
+            .termCarts{
+                h1{
+                    font-size: 32px;
+                }
+                max-width: 264px;
+            }
+        }
+    }
+}
+@media screen and (max-width:1280px) {
+    .term{
+        .title{
+            h1{
+                font-size: 48px;
+            }
+            
+            img{
+                width: 157.4748077392578px;
+                height: 35.17203903198242px;
+            }
+        }
+        .termCartsCont{
+            .termCarts{
+                h1{
+                    font-size: 32px;
+                }
+                max-width: 264px;
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    .term{
+        .title{
+            h1{
+                h1{
+                    font-size: 32px;
+                }
+                font-size: 48px;
+            }
+            
+            img{
+                width: 157.4748077392578px;
+                height: 35.17203903198242px;
+            }
+        }
+        .termCartsCont{
+            .termCarts{
+                max-width: 222px;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .term{
+        .title{
+            h1{
+                font-size: 32px;
+            }
+            img{
+                width: 117.98152160644531px;
+                height: 26.3512020111084px;
+            }
+        }
+        .termCartsCont{
+            .termCarts{
+                h1{
+                    font-size: 20px;
+                }
+                max-width: 164px;
+            }
+        }
+        p{
+            max-width: 704px;
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width:360px) {
+    .term{
+        .title{
+            margin: 40px 0 ;
+            display: block;
+            text-align: center;
+        }
+        p{
+            max-width: 312px;
+            // font-size: 14px;
+        }
+        .termCartsCont{
+            
+            .termCarts{
+                h1{
+                    font-size: 32px;
+                }
+                max-width: 312px;
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+.sectionRate{
+    padding: 50px 0 ;
+    h1{
+        font-family: Roboto;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+    .rateTransfer{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        padding-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 16px 32px 0px rgba(37, 37, 38, 0.1);
+        margin: 0 auto;
+        .rateCDramIcon{
+            color: rgba(128, 0, 128, 1) ;
+        }
+        .rateUSTDIcon{
+            color: rgba(38, 161, 123, 1) ;
+        }
+    }
+    .rateParagraph{
+            margin: 50px auto ;
+            font-family: Roboto;
+            font-weight: 400;
+            line-height: 28px;
+        .bold{
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+        }
+    }
+    .courseRatingTitle{
+        color: rgba(128, 0, 128, 1) ;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 auto;
+        line-height: 28px;
+    }
+    .courseRatingTitle{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 30px 0;
+        color: rgba(128, 0, 128, 1);
+    }
+    .rateBtn{
+        display: flex;
+        justify-content: center;
+        .btn{
+            height: 56px;
+            width: 264px;
+            border: none;
+            margin: 30px auto 60px auto;
+            border-radius: 32px;
+            padding-top: 17px;
+            font-size: 18px;
+            background: rgba(128, 0, 128, 1);
+            color: white;
+        }
+    }
+    
+}
+.backColorRate{
+    background-color: rgba(245, 245, 245, 1);
+}
+.backColorRateInBuy{
+    background-color: white;
+}
+.none{
+    display: none;
+}
+@media screen and (min-width:1280px) {
+    .rateTransfer{
+        width: 55%;
+        h1{
+            font-size: 48px;
+        }
+        .rateCDramIcon{
+            font-size: 56px; 
+            margin: 10px 10px 0 10px;
+
+        }
+        .rateUSTDIcon{
+            font-size: 56px; 
+            margin: 10px 10px 0 10px;
+    
+        }
+    }
+    .rateParagraph{
+        width: 55%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1280px) {
+    .rateTransfer{
+        width: 90%;
+        h1{
+            font-size: 48px;
+        }
+        .rateCDramIcon{
+            font-size: 56px; 
+            margin: 10px 10px 0 10px;
+            
+        }
+        .rateUSTDIcon{
+            font-size: 56px; 
+            margin: 10px 10px 0 10px;  
+        }
+    }
+    .rateParagraph{
+        font-size: 20px;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .rateTransfer{
+        h1{
+            font-size: 30px;
+        }
+        .rateCDramIcon{
+            font-size: 42px;
+            margin: 15px 10px 0 10px;
+
+        }
+        .rateUSTDIcon{
+            font-size: 42px; 
+            margin: 15px 10px 0 10px;
+            
+        }
+    }
+    .rateParagraph{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:360px) {
+    .sectionRate{
+        h1{
+            font-size: 30px;
+        }
+    }
+    .rateTransfer{
+        h1{
+            font-size: 20px;
+        }
+        .rateCDramIcon{
+            font-size: 28px;
+            margin: 20px 10px 0 10px;
+
+        }
+        .rateUSTDIcon{
+            font-size: 28px; 
+            margin: 20px 10px 0 10px;
+            
+        }
+    }
+}
+// @media screen and (min-width:360px) {
+//     .sectionRate{
+//         h1{
+//             font-size: 30px;
+//         }
+//     }
+//     .rateTransfer{
+//         h1{
+//             font-size: 20px;
+//         }
+//         .rateCDramIcon{
+//             // font-size: 28px;
+//             margin: 20px 10px 0 10px;
+
+//         }
+//         .rateUSTDIcon{
+//             // font-size: 28px; 
+//             margin: 20px 10px 0 10px;
+            
+//         }
+//     }
+// }

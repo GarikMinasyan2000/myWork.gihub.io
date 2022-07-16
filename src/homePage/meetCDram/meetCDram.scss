@@ -1,0 +1,119 @@
+.meet{
+    background-color: rgba(245, 245, 245, 1);
+    margin-top: 50px;
+    padding: 100px 0;
+    .flex{
+        display: flex;
+        justify-content: center;
+        span{
+            margin:0 5px;
+            text-align: center;
+        }
+        .logo{
+            align-self: center;
+        }
+    }
+    .meetParagraph{
+        // height: 48px;
+        max-width: 70%;
+        margin: 60px auto ;
+        text-align: center;
+        font-weight: 500;
+    }
+    .cardsFrame{
+        // margin: 0 auto 50px auto  ;
+        // max-width: 90%;
+        margin: 0 ;
+        .cards{
+            box-shadow: 0px 16px 32px 0px rgba(37, 37, 38, 0.1);
+            text-align: center;
+            height: 360px;
+            padding: 30px 0 ;
+            border-radius: 10px;
+            border-bottom: 4px solid #800080;
+            background-color: white;
+            .meetIcon{
+                font-size: 96px;
+            }
+            .cardName{
+                text-align: center;
+                font-weight: 700;
+                font-size: 20px;
+                margin: 20px 0;
+            }
+            .cardTitle{
+                width: 80%;
+                text-align: center;
+                font-weight: 400;
+                margin: 10px auto;
+            }
+        }
+    }
+
+}
+@media screen and (max-width:1280px) {
+    .meet{
+        .cards{
+            width: 264px;
+        }
+    }
+}
+@media screen and (min-width:1280px) {
+    .meet{
+        .cards{
+            width: 264px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .meet{
+        .cards{
+            width: 312px;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .meet{
+        .flex{
+            span{
+                font-size: 60px;
+            }
+            .logo{
+                height: 44px;
+                width: 191px;
+                margin:0 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .meet{
+        .flex{
+            span{
+                font-size: 40px;
+            }
+            .logo{
+                height: 29px;
+                width: 127px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:360px) {
+    .meet{
+        .flex{
+            span{
+                font-size: 30px;
+            }
+            .logo{
+                height: 23px;
+                width: 100px;
+            }
+        }
+    }
+}

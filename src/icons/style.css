@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?nsx1ny');
+  src:  url('fonts/icomoon.eot?nsx1ny#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nsx1ny') format('truetype'),
+    url('fonts/icomoon.woff?nsx1ny') format('woff'),
+    url('fonts/icomoon.svg?nsx1ny#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic_bell:before {
+  content: "\e918";
+  color: #800080;
+}
+.icon-ic_user:before {
+  content: "\e919";
+  color: #800080;
+}
+.icon-rovno:before {
+  content: "\e916";
+  color: #666;
+}
+.icon-Close-Button .path1:before {
+  content: "\e914";
+  color: rgb(41, 41, 41);
+  opacity: 0.2;
+}
+.icon-Close-Button .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-ic_eye:before {
+  content: "\e91a";
+  color: #666;
+}
+.icon-ic_eye_slash:before {
+  content: "\e91b";
+  color: #666;
+}
+.icon-ic_exclamation_triangle:before {
+  content: "\e917";
+  color: #8f8f8f;
+}
+.icon-ic_exclamation_circle:before {
+  content: "\e913";
+  color: #ffa000;
+}
+.icon-ic_question_circle:before {
+  content: "\e912";
+  color: #666;
+}
+.icon-ic_drop_down:before {
+  content: "\e911";
+  color: #666;
+}
+.icon-variantfailure .path1:before {
+  content: "\e900";
+  color: rgb(235, 66, 80);
+}
+.icon-variantfailure .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-variantsuccess .path1:before {
+  content: "\e902";
+  color: rgb(128, 0, 128);
+}
+.icon-variantsuccess .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-VariantsBacked:before {
+  content: "\e904";
+  color: #800080;
+}
+.icon-Variantslimited:before {
+  content: "\e905";
+  color: #800080;
+}
+.icon-VariantsSecurity:before {
+  content: "\e906";
+  color: #800080;
+}
+.icon-VariantsStable:before {
+  content: "\e907";
+  color: #800080;
+}
+.icon-VariantsTransfer:before {
+  content: "\e908";
+  color: #800080;
+}
+.icon-VariantsSell:before {
+  content: "\e909";
+  color: #800080;
+}
+.icon-Variantsfeature:before {
+  content: "\e90a";
+  color: #800080;
+}
+.icon-VariantsDeposit:before {
+  content: "\e90b";
+  color: #800080;
+}
+.icon-VariantsCredit:before {
+  content: "\e90c";
+  color: #800080;
+}
+.icon-VariantsBuy:before {
+  content: "\e90d";
+  color: #800080;
+}
+.icon-ic_ustdihgyigu:before {
+  content: "\e90e";
+}
+.icon-ic_menu_shape:before {
+  content: "\e90f";
+}
+.icon-Subtractihgyigu:before {
+  content: "\e910";
+}

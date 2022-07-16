@@ -1,0 +1,176 @@
+.sectionWhy{
+    padding: 60px 0 ;
+    .titleWhy{
+        display: flex;
+        justify-content: center;
+        h1{
+            font-family: Roboto;
+            font-weight: 400;
+            line-height: 70px;
+        }
+    }
+    h1{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    p{
+        max-width: 100%;
+    }
+    .firstWhycard{
+        border-radius: 8px;
+        border-bottom: 4px solid rgba(128, 0, 128, 1);
+        position: relative;
+        margin: 50px auto;
+        padding: 50px;
+        background-color: rgba(245, 245, 245, 1);
+        span{
+            position: absolute;
+            top: 70px;
+            left: 5%;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 72px;
+            opacity: 0.8;
+            z-index: 1;
+            color: rgba(230, 204, 230, 1);
+        }
+       
+        .firstWhycard_1{
+            margin-top: 60px;
+            z-index: 2;
+        }
+        .firstWhycard_2{
+            font-size: 180px;
+            text-align: center;
+        }
+    }
+    .secondWhycard{
+        position: relative;
+        border-radius: 8px;
+        border-bottom: 4px solid rgba(128, 0, 128, 1);
+        margin: 50px auto;
+        padding: 50px;
+        background-color: rgba(245, 245, 245, 1);
+        span{
+            width: max-content;
+            
+            text-align: center;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 72px;
+            opacity: 0.8;
+            z-index: 1;
+            color: rgba(230, 204, 230, 1);
+        }
+        .secondWhycard_1{
+            margin-top: 60px;
+            z-index: 2;
+        }
+        .secondWhycard_2{
+            
+            font-size: 180px;
+            text-align: center;
+        }
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    .mediaWidth{
+        width: 55%;
+    }
+    .titleWhy{
+        h1{
+            font-size: 60px;
+        }
+    }
+    .secondWhycard{
+        span{
+            position: absolute;
+            top: 25%;
+            left: 36%;
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+    .mediaWidth{
+        width: 312px;
+    }
+    .titleWhy{
+        h1{
+            font-size: 30px;
+        }
+        img{
+            height: 23.24126434326172px;
+            width: 100.88821411132812px;
+            margin: 20px 10px 0 10px;
+        }
+    }
+}
+@media screen and (min-width:360px) {
+    .mediaWidth{
+        width: 80%;
+    }
+    .titleWhy{
+        h1{
+            font-size: 30px;
+        }
+        img{
+                height: 23.24126434326172px;
+                width: 100.88821411132812px;
+                margin: 20px 10px 0 10px;
+        }
+    }
+    .secondWhycard{
+        span{
+            position: absolute;
+            top: 5%;
+            left: 6%;
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    .mediaWidth{
+        width: 80%;
+    }
+    .titleWhy{
+        h1{
+            font-size: 40px;
+        }
+        img{
+            height: 29.33333396911621px;
+            width: 127.33333587646484px;
+            margin: 17px 10px 0 10px;
+        }
+    }
+    .secondWhycard{
+        span{
+            position: absolute;
+            top: 25%;
+            left: 36%;
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    .mediaWidth{
+        width: 80%;
+    }
+    .titleWhy{
+        h1{
+            font-size: 60px;
+        }
+        img{
+            width: 197px;
+            height: 44px;
+            margin: 12px 10px 0 10px;
+
+        }
+    }
+}
+@media screen and (min-width:1280px) {
+    .mediaWidth{
+        width: 55%;
+    }
+}

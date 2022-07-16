@@ -1,0 +1,123 @@
+.collateralSection{
+    background-color: #E5E5E5;
+    padding: 40px 0 80px 0;
+    .steper{
+        margin: 40px 0 80px 0 ;
+        .elipse{
+            display: flex;
+            flex-direction: column;
+            padding-top: 5px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #B8B8B8B8;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                width: 120px;
+                text-align: center;
+                margin-left: -45px;
+                margin-top: 10px;
+                color: #292929;
+            }
+        }
+        .rectangle{
+            margin: 0 5px;
+            width: 114px;
+            height: 2px;
+            background-color: #B8B8B8B8;
+            align-self: center;
+        }
+        .purpleBack{
+            background-color: #800080
+        }
+        .purpleText{
+            color: #800080;
+        }
+    }
+    .charge{
+        background-color: white;
+        box-shadow: 0px 16px 32px 0px #2525261A;
+        border-radius: 8px;
+        margin: 0 auto;
+        h1{
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 36px;
+            text-align: center;
+            margin-bottom: 24px;
+            span{
+                font-size: 32px;
+                font-weight: 700;
+                color: #800080;
+                line-height: 36px;
+            }
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        .inputCont{
+            p{
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28px;
+            }
+            input{
+                height: 64px;
+                width: 95%;
+                left: 0px;
+                top: 36px;
+                border-radius: 4px;
+                padding: 8px 12px 8px 16px;
+                border: 1px solid #E0E0E0
+
+            }
+            button{
+                margin: 80px 0 0 0;
+                height: 56px;
+                width: 269px;
+                border-radius: 32px;
+                padding: 14px 32px 14px 32px;
+                background: #800080;
+                color: white;
+                border: none;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .charge{
+        width: 704px;
+        padding: 48px;
+        
+    }
+}
+@media screen and (min-width:768px) {
+    .charge{
+        width: 796px;
+        padding: 48px;
+        
+    }
+}
+@media screen and (max-width:360px) {
+    .none{
+        display: none;
+    }
+    .charge{
+        width: 311px;
+        padding: 24px 16px 24px 16px;
+
+    }
+}
