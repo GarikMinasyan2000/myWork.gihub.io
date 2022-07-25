@@ -13,7 +13,7 @@ const HeroSection = () => {
                     <h1  className='col-md-6  cryDram' title='CryptoDram'>CryptoDram</h1>
                </div> 
                 <h1 className='text-sm-center  text-lg-start better'>better money</h1>
-                <Link to='/#' className='links btn'>Buy now</Link>
+                <button><Link to='/#' className='links btnA'>Buy now</Link></button>
             </div>
             <div className=' second align-self-md-end order-sm-1  order-lg-2 
                 col-md-12  col-lg-4 col-xl-4 col-xxl-5

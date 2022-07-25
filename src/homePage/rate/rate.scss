@@ -32,7 +32,6 @@
             line-height: 28px;
         .bold{
             font-family: Roboto;
-            font-size: 20px;
             font-weight: 700;
             line-height: 28px;
         }
@@ -111,12 +110,13 @@
         }
         .rateCDramIcon{
             font-size: 56px; 
-            margin: 10px 10px 0 10px;
+            margin: 15px 2px 8px 2px ;
             
         }
         .rateUSTDIcon{
             font-size: 56px; 
-            margin: 10px 10px 0 10px;  
+            margin: 15px 2px 8px 2px ;
+            
         }
     }
     .rateParagraph{
@@ -133,17 +133,19 @@
         }
         .rateCDramIcon{
             font-size: 42px;
-            margin: 15px 10px 0 10px;
+            margin: 15px 2px 0 2px ;
+
 
         }
         .rateUSTDIcon{
             font-size: 42px; 
-            margin: 15px 10px 0 10px;
+            margin: 15px 2px 0 2px;
             
         }
     }
     .rateParagraph{
         font-size: 14px;
+        
     }
 }
 @media screen and (max-width:360px) {
@@ -151,20 +153,24 @@
         h1{
             font-size: 30px;
         }
-    }
-    .rateTransfer{
-        h1{
-            font-size: 20px;
-        }
-        .rateCDramIcon{
-            font-size: 28px;
-            margin: 20px 10px 0 10px;
+        .rateTransfer{
+            h1{
+                font-size: 20px;
+            }
+            .rateCDramIcon{
+                font-size: 28px;
+                margin: 20px 2px 0 2px ;
 
+    
+            }
+            .rateUSTDIcon{
+                font-size: 28px; 
+                margin: 20px 2px 0 2px;
+                
+            }
         }
-        .rateUSTDIcon{
-            font-size: 28px; 
-            margin: 20px 10px 0 10px;
-            
+        .bold{
+            font-size: 14px;
         }
     }
 }

@@ -26,7 +26,7 @@
             border-radius: 4px;
             padding: 8px 12px 8px 16px;
             border: #E0E0E0 1px solid;
-            height: 64px;
+            width: 100%;
         }
         .div{
             width: 100%;
@@ -65,7 +65,7 @@
                 .display{
                     position: absolute;
                     top: 20px;
-                    left: 20px;
+                    // left: 20px;
                     font-size: 24px;
                     display: block;
                 }
@@ -131,6 +131,7 @@
         border: #800080 2px solid;
         border-radius: 16px;
         margin: 64px auto;
+        // padding: 48px;
         .tittle{
             font-size: 30px;
             font-weight: 700;
@@ -177,7 +178,6 @@
     .transferInfo{
         width: 1128px;
         padding: 48px;
- 
     }
 }
 @media screen and (max-width:1280px) {
@@ -210,6 +210,7 @@
         width: 703px;
     }
 }
+
 @media screen and (max-width:360px) {
     .transferBodyContainer{
         width: 100%;
@@ -229,5 +230,37 @@
     .transferInfo{
         width: 312px;
         padding: 24px 16px;
+    }
+}
+@media screen and (min-width:600px) {
+    .transferBodyContainer{
+        .div{
+            label{
+
+                .display{
+                    left: 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .transferBodyContainer{
+        width: 100%;
+        .div{
+
+            input{
+                width: 60%;
+            }
+            label{
+                width: 35%;
+                .display{
+                    left: 10px;
+                }
+            }
+        }
+    }
+    .transferInfo{
+        width: 100%;
     }
 }

@@ -14,9 +14,10 @@
         }
     }
     .meetParagraph{
+        font-size: 14px;
         // height: 48px;
         max-width: 70%;
-        margin: 60px auto ;
+        margin: 24px auto 40px auto;
         text-align: center;
         font-weight: 500;
     }
@@ -107,12 +108,14 @@
 @media screen and (max-width:360px) {
     .meet{
         .flex{
+            display: block;
             span{
                 font-size: 30px;
             }
             .logo{
                 height: 23px;
                 width: 100px;
+                margin-top: -15px;
             }
         }
     }

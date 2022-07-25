@@ -8,16 +8,21 @@
     background-position: top center ;
     background-size: cover;
     margin: 0; 
-    .btn{
+    button{
         height: 56px;
         width: 264px;
         border-radius: 32px;
-            font-size: 18px;
-            padding-top: 16px;
-        padding: 14px, 32px, 14px, 32px;
+        padding: 14px 32px 14px 32px;
         margin-top: 20px;
         background-color: rgba(128, 0, 128, 1);
         color: white;
+        border: none;
+        .btnA{
+            font-size: 18px;
+            &:hover{
+                color: white;
+            }
+        }
     }
     .first{
         .cryDram{

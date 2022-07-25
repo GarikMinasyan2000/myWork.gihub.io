@@ -87,7 +87,7 @@ const Calculator = (props) => {
             </h1>
             <div className="calculator">
                 <div className="inputsCont row">
-                    <div className="inputs col-sm-12 col-md-12 col-lg-6 row">
+                    <div className="inputs col-sm-12  col-md-12 col-lg-6 row">
                             <p className='col-nol-12'>Collateral amount</p>
                             <div className="div">
                                 <input className='' type="text" placeholder='20' />
@@ -102,7 +102,7 @@ const Calculator = (props) => {
                                 </label>
                             </div>
                     </div>
-                    <div className="inputs col-sm-12 col-md-12 col-lg-6 row">
+                    <div className="inputs mt-nol-4 mt-md-0 col-sm-12 col-md-12 col-lg-6 row">
                             <p className='col-nol-12 seconddiv'>Loan amount</p>
                             <div className="div seconddiv">
                                 <input className='' type="text" placeholder='20' />

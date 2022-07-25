@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?nsx1ny');
-  src:  url('fonts/icomoon.eot?nsx1ny#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?nsx1ny') format('truetype'),
-    url('fonts/icomoon.woff?nsx1ny') format('woff'),
-    url('fonts/icomoon.svg?nsx1ny#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?fdj0lv');
+  src:  url('fonts/icomoon.eot?fdj0lv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fdj0lv') format('truetype'),
+    url('fonts/icomoon.woff?fdj0lv') format('woff'),
+    url('fonts/icomoon.svg?fdj0lv#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,50 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Illustration-pizza:before {
+  content: "\e927";
+  color: #800080;
+}
+.icon-Illustration-small .path1:before {
+  content: "\e920";
+  color: rgb(41, 41, 41);
+}
+.icon-Illustration-small .path2:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(41, 41, 41);
+}
+.icon-Illustration-small .path3:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(128, 0, 128);
+}
+.icon-Illustration-small .path4:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(128, 0, 128);
+}
+.icon-Illustration-small .path5:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(128, 0, 128);
+}
+.icon-Illustration-small .path6:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(128, 0, 128);
+}
+.icon-Illustration-small .path7:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(128, 0, 128);
+}
+.icon-ic_exit:before {
+  content: "\e91c";
+}
+.icon-ic_setting:before {
+  content: "\e91d";
+}
 .icon-ic_bell:before {
   content: "\e918";
   color: #800080;
@@ -46,6 +90,14 @@
   content: "\e915";
   margin-left: -1em;
   color: rgb(255, 255, 255);
+}
+.icon-ic_times_circle:before {
+  content: "\e91f";
+  color: #eb4250;
+}
+.icon-ic_check:before {
+  content: "\e91e";
+  color: #3bd16d;
 }
 .icon-ic_eye:before {
   content: "\e91a";

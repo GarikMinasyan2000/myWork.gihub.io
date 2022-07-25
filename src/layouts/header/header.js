@@ -1,30 +1,52 @@
-import React, { useState }from 'react';
+import React, { useState ,useEffect}from 'react';
+import {FaAngleLeft} from 'react-icons/fa'
 import './header.scss'
 import {useSelector, useDispatch} from 'react-redux'
 import logoImg from '../../images/homePageImages/logo.png'
 import '../../icons/style.css';
 import { Link } from 'react-router-dom';
 import ModalWindowHeader from './modalHeader/modalHeader';
-import { loginStatusDisp } from '../../redux/loginReducer';
+import { getNotifCount, loginStatusDisp } from '../../redux/loginReducer';
+
+
 
 const Header = () => {
     const loginStatus = useSelector( store => store.loginData.loged)
+    const notifBody = useSelector(store => store.loginData.notifBody)
+    const notifCount = useSelector(store => store.loginData.notifCount)
     const dispatch = useDispatch()
     const [activeMenu,setActiveMenu] = useState(false)
     const [activeProfile,setActiveProfile] = useState(false)
+    const [activeNotific,setActiveNotific] = useState(false)
+
+
+
+
+    useEffect(()=>{
+        dispatch(getNotifCount(notifBody.length))
+
+        if (localStorage.getItem('loged') !== null) {
+            dispatch(loginStatusDisp(true))
+        }
+
+    },[])
+
     const toggleMenu = () => {
         setActiveMenu(!activeMenu)
-    }
-    
-    
-    if (localStorage.getItem('loged') !== null) {
-        dispatch(loginStatusDisp(true))
-        
     }
     const logOut = () => {
         dispatch(loginStatusDisp(false))
         setActiveProfile(false)
         localStorage.removeItem('loged')
+    }
+    const activeDownProfile = () => {
+        setActiveProfile(!activeProfile)
+        setActiveNotific(false)
+
+    }
+    const activeDownNotific = () => {
+        setActiveProfile(false)
+        setActiveNotific(!activeNotific)
     }
 
     return(
@@ -61,8 +83,64 @@ const Header = () => {
                             <Link onClick={()=> setActiveMenu(false)} to='/credit' className="links  " title='Credit'>Credit</Link>
                             <Link onClick={()=> setActiveMenu(false)} to='/transfer' className="links  " title='Transfer'>Transfer</Link>
                             <Link onClick={()=> setActiveMenu(false)} to='/what_is_cDram' className="links  " title='What is cDram?'>What is cDram?</Link>
-                            <Link onClick={()=> setActiveMenu(false)} to='/login'  className='links col-lg-1 col-xl-1  span login'>Login</Link>
-                            <Link onClick={()=> setActiveMenu(false)} to='/register' className='links col-lg-1 col-xl-1 span reg'>Registration</Link>
+                            {loginStatus?
+                                <>
+                                    <div onClick={activeDownNotific} className="notif">
+                                        <div style={{display:'flex'}}>
+                                            <span className="icon-ic_bell bell ">
+                                            {notifCount > 0 && 
+                                                <span className='countNotif'>{notifCount}</span>
+                                            }
+                                            </span>
+                                            <p>Notifications</p>
+                                        </div>
+                                        <div className={activeNotific ? "angle active" : 'angle'}>
+                                            <FaAngleLeft/>
+                                        </div>
+                                    </div>
+                                    <div onClick={activeDownNotific} className={activeNotific ? 'notifBody activeDown' : 'notifBody'}>
+                                        {
+                                            notifBody.length > 0 ?
+                                            notifBody.map((item,index) => {
+                                                return(
+                                                    <div key={index} className='item'>
+                                                        <span className="icon-ic_exclamation_circle warning"></span>
+                                                        <div className="flex">
+                                                            <p className='title'>{item.title}</p>
+                                                            <p className='text'>{item.body}</p>
+                                                        </div>
+                                                    </div>
+                                                )
+                                            })
+                                            :
+                                            <div style={{textAlign:'center'}}>
+                                                <span className='havent'>You haven't notifications</span>
+                                            </div>
+                                        }
+                                    </div>
+                                    <div className="myAccount">
+                                        <span className="icon-ic_user user"></span>
+                                        <p>My account</p>
+                                    </div>
+
+                                    <div className="settings">
+                                        <span className="icon-ic_setting user"></span>
+                                        <p>Settings</p>
+                                    </div>
+
+                                    <div onClick={logOut} className="settings exit">
+                                        <span className="icon-ic_exit user"></span>
+                                        <p>Log out</p>
+                                    </div>
+                                </>
+                            :
+                                <>
+                                    <Link onClick={()=> setActiveMenu(false)} to='/login'  className='links col-lg-1 col-xl-1  span login'>Login</Link>
+                                    <Link onClick={()=> setActiveMenu(false)} to='/register' className='links col-lg-1 col-xl-1 span reg'>Registration</Link>
+                                </>
+
+                            }
+                            
                             <select name="lang" className='lang' id="">
                                 <option className='option active' value="eng">Eng</option>
                                 <option className='option' value="hy">Հայ</option>
@@ -72,24 +150,68 @@ const Header = () => {
                     </div>
                 </ModalWindowHeader>
                 <div className="collapse navbar-collapse col-xl-2 regForm">
-                    {loginStatus ?
+                    {
+                        loginStatus ?
                         <>
-                           <span className="icon-ic_user a" onClick={()=> setActiveProfile(true)}></span>
-                            <ModalWindowHeader active={activeProfile} setActive={setActiveProfile}>
-                                <ul>
-                                    <li>profile</li>
-                                    <li>messages</li>
-                                    <li>notif</li>
-                                    <li>settings</li>
-                                    <li style={{color:'red'}} onClick={logOut}>Exit</li>
-                                </ul>
-                            </ModalWindowHeader>
-                            <span className="icon-ic_bell a"></span>  
+                            <span className="icon-ic_user a relative" onClick={activeDownProfile}>
+                                {
+                                activeProfile &&
+                                    <div className="downProfile ">
+                                        <div className="myAccount">
+                                                <span className="icon-ic_user user"></span>
+                                                <p>My account</p>
+                                            </div>
+                                            <div className="settings">
+                                                <span className="icon-ic_setting user"></span>
+                                                <p>Settings</p>
+                                            </div>
+                                            <div onClick={logOut} className="settings exit">
+                                                <span className="icon-ic_exit user"></span>
+                                                <p>Log out</p>
+                                        </div>
+                                    </div>
+                                }
+                            </span>
+                            <span onClick={activeDownNotific} className="icon-ic_bell a relative">
+                                {notifCount > 0 && 
+                                    <span className='absolute'>{notifCount}</span>
+                                }
+                                {       
+                                    activeNotific &&
+                                    <div className="downNotific">     
+                                        <p className='titleNot'>Notifications</p>
+                                        {   
+                                            notifBody.length > 0 ?
+                                            notifBody.map((item,index) => {
+                                                return(
+                                                    <div key={index} className='item'>
+                                                        <span className="icon-ic_exclamation_circle warning"></span>
+                                                        <div className="flex">
+                                                            <p  className='title'>{item.title}</p>
+                                                            <p  className='text'>{item.body}</p>
+                                                        </div>
+                                                    </div>
+                                                )
+                                            })
+                                            : 
+                                            <div style={{textAlign:'center'}}>
+                                                <span className='havent'>You haven't notifications</span>
+                                            </div>
+                                        }
+                                    
+                                        
+                                    </div>
+
+                                }
+                               
+                                                    
+
+                            </span>  
                         </>
                         :
                         <>
                             <Link to='/login'  className='links col-lg-1 col-xl-1  span login'>Login</Link>
-                            <Link to='/register' className='links col-lg-1 col-xl-1 span btn'>Registration</Link>
+                            <button><Link to='/register' className='links col-lg-1 col-xl-1 span button'>Registration</Link></button>
                         </> 
                     }
                     

@@ -3,11 +3,13 @@ import { useDispatch } from "react-redux";
 import './loginPage.scss'
 import { loginStatusDisp } from '../../../redux/loginReducer';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const useValidation = (value, validations) => {
+    
     const [isEmpty,setIsEmpty] = useState(true)
     const [minLengthError,setMinLengthError] = useState(false)
-    const [emailError, setEmailError] = useState(false)
+    // const [emailError, setEmailError] = useState(false)
 
 
     
@@ -23,17 +25,17 @@ const useValidation = (value, validations) => {
                 value ? setIsEmpty(false) : setIsEmpty(true)
             break;
 
-            case 'isEmail':
-                const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-                re.test(String(value).toLowerCase()) ? setEmailError(false) : setEmailError(true)
-            break;
+            // case 'isEmail':
+            //     const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+            //     re.test(String(value).toLowerCase()) ? setEmailError(false) : setEmailError(true)
+            // break;
             }
     }
     },[value])
 
     return{
         isEmpty,
-        emailError,
+        // emailError,
         minLengthError,
     }
 }
@@ -98,7 +100,7 @@ const LoginPage = () => {
             <div className="loginContainer ">
                 <div className="title">
                     <h1>Login</h1>
-                    <button>Registration</button>
+                    <Link to='/register'>Registration</Link>
                 </div>
                 <div className="mailInp">
                     <p>Email</p>
@@ -134,6 +136,8 @@ const LoginPage = () => {
                 </div>
                     {submited && ( email.isEmpty || password.isEmpty) && <span className='errorText'>Fill in the required fields</span>}
                 <button onClick={submit} className='loginBtn'>Login</button>
+                <button onClick={loginWithMetamask}>metamask</button>
+
             </div>
         </div>
     )

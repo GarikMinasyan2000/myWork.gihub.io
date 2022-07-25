@@ -1,8 +1,16 @@
 const initialState = {
-    loged: false
+    loged: false,
+    notifBody:[
+        {title:'Notification Title', body:'Proactively incubate innovative processes for '},
+        {title:'Notification Title', body:'Proactively incubate innovative processes for '},
+    ],
+    notifCount:0
 }
 
 const LOGIN = 'LOGIN'
+const NOTIF_BODY = 'NOTIF_BODY'
+const NOTIF_COUNT = ' NOTIF_COUNT'
+
 
 
 const LoginReducer = ( state = initialState, action) => {
@@ -12,7 +20,17 @@ const LoginReducer = ( state = initialState, action) => {
                 ...state,
                 loged: action.loginStatus
             }
-            default:return state
+        case NOTIF_BODY:
+            return{
+                ...state,
+                notifBody:action.newNotif
+            }
+        case NOTIF_COUNT:   
+            return{
+                ...state,
+                notifCount:action.countNot
+            }
+        default:return state
     }
 }
 
@@ -21,5 +39,5 @@ const LoginReducer = ( state = initialState, action) => {
 export default LoginReducer
 
 
-
+export const getNotifCount = (countNot) => ({type:NOTIF_COUNT, countNot})
 export const loginStatusDisp = (loginStatus) => ({type:LOGIN, loginStatus})

@@ -1,10 +1,12 @@
 import {combineReducers ,createStore} from 'redux'
 import LoginReducer from "../redux/loginReducer";
+import SecretReducer from '../redux/secretReducer';
 
 
 
 const reducers = combineReducers({
-    loginData:LoginReducer
+    loginData:LoginReducer,
+    secretData:SecretReducer
 })
 
 

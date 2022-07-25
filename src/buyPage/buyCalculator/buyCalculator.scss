@@ -50,6 +50,7 @@
                     select{
                         appearance: none;
                         text-align: center;
+                        background-color: white;
                     }
                     .dropDown{
                         color: #666666;
@@ -169,6 +170,15 @@
         .secondP{
             margin-left: 20px;
         }
+         
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .calcSection{
+        .rovno{
+            display: none;
+        }  
     }
 }
 @media screen  and (min-width:768px){
@@ -194,9 +204,7 @@
         .calcFull{
             width: 90%;
         }
-        .rovno{
-                display: none;
-            }
+        
     }      
 }
 @media screen  and (max-width:360px){
