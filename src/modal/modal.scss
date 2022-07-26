@@ -35,7 +35,7 @@
     transition: 0.5s;
 }
 
-@media screen and (min-width:360px) {
+@media screen and (min-width:600px) {
     .modalContent{
         // width: 400px;
         .closeBtn{
@@ -48,7 +48,7 @@
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:600px) {
     .modalContent{
         width: 312px;
 

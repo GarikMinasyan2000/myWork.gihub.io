@@ -11,10 +11,12 @@ import TranferPage from './transferPage/transferPage';
 import LoginPage from './layouts/header/loginPage/loginPage';
 import RegisterPage from './layouts/header/registerPage/registerPage';
 import RegVerifPage from './layouts/header/registerPage/regVerifPage/regVerifPage';
-import Collateral from './collateral/collateral';
 import SecretPage from './layouts/header/registerPage/regSecretPage/regSecretPage';
 
-
+import Collateral from './collateral/collateral';
+import Contacts from './contacts/contacts'
+import Faq from './faq/faq';
+import About from './about/about';
 
 function App() {
 
@@ -40,7 +42,11 @@ function App() {
           <Route path='/sell' element={<SellPage/>}></Route>
           <Route path='/deposite' element={<DepositPage/>}></Route>
           <Route path='/transfer' element={<TranferPage/>}></Route>
+          
           <Route path='/colateral' element={<Collateral/>}></Route>
+          <Route path='/contacts' element={<Contacts/>}></Route>
+          <Route path='/faq' element={<Faq/>}></Route>
+          <Route path='/about' element={<About/>}></Route>
         </Routes>
       <Footer  scroll={scrollUp}/>
     </BrowserRouter>

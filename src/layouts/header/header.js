@@ -2,7 +2,7 @@ import React, { useState ,useEffect}from 'react';
 import {FaAngleLeft} from 'react-icons/fa'
 import './header.scss'
 import {useSelector, useDispatch} from 'react-redux'
-import logoImg from '../../images/homePageImages/logo.png'
+import logoImg from '../../images/logo.png'
 import '../../icons/style.css';
 import { Link } from 'react-router-dom';
 import ModalWindowHeader from './modalHeader/modalHeader';

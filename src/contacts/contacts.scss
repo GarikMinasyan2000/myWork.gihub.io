@@ -1,0 +1,272 @@
+.contactsSection{
+
+    .contactsBackground{
+        background: #F5F5F5;
+        background-image: url('../images/Intersect.png');
+        background-size: cover;
+        height: 304px;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        background-position:center;
+        .backTitle{
+            h1{
+                font-weight: 700;
+                line-height: 72px;
+                color: #800080;
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+        .backLogo{
+            font-size: 180px;
+            width: max-content;
+        }
+    }
+    .contactsContainer{
+        margin: 64px auto 96px auto;
+        box-shadow: 0px 16px 32px 0px rgba(37, 37, 38, 0.1);
+        border-radius: 16px;
+        padding: 24px;
+        .firstCont{
+            position: relative;
+            background-color: #800080;
+            border-radius: 12px;
+            padding: 24px;
+            color: white;
+            h1{
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 36px;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-top: 32px;
+            }
+            .contactsInfo{
+                margin-top: 84px;  
+                display: flex;
+                flex-direction: column; 
+                div{
+                    display: flex;
+                    margin-bottom: 24px;
+                    p{
+                        margin: 0 0 0 1rem;
+                    }
+                }          
+                i{
+                    width: max-content;
+                    height: max-content;
+                    &::before{
+                        background-color: #F5F5F5;
+                        font-size: 24px;
+                        border-radius: 50%;
+                        padding: 2px;
+                    }
+                }
+                .sitesIcons{
+                    margin-top: 90px;
+                    align-self: start;
+                    a{
+                        font-size: 20px;
+                        margin-right:40px ;
+                    }
+                    .insta{
+                        
+                        &:hover{
+                            color: #C13584;    
+                        }
+                    }
+                    .youtube{
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+            }
+            .absolute{
+                position: absolute;
+                bottom: -3rem;
+                right: -3rem;
+                font-size: 180px;
+                z-index: 2;
+                &::before{
+                    color: rgba(255, 255, 255, 0.3);
+                }
+            }
+        }
+        .secondCont{
+            background-color: white;
+            text-align: end;
+            .email{
+
+                p{
+                    margin-left: 1rem;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: start;
+                }
+                input{
+                    width: 100%;
+                    height: 64px;
+                    border-radius: 4px;
+                    padding: 8px 12px 8px 16px;
+                    border: 1px solid rgba(224, 224, 224, 1);
+                    outline: none;
+                     caret-color:#800080;
+                 }
+                 .error{
+                    border: 1px solid rgba(235, 66, 80, 1);
+                    background-color: rgba(235, 66, 80, 0.1);
+                 }
+            }
+            .message{
+                margin-top: 44px;
+                p{
+                    text-align: start;
+                    margin-left: 1rem;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                textarea{
+                    height: 236px;
+                    width: 100%;
+                    border-radius: 4px;
+                    padding: 8px 12px 8px 16px;
+                    border: 1px solid rgba(224, 224, 224, 1);
+                    outline: none;
+                    caret-color:#800080;
+
+                }
+            }
+            button{
+                border: none;
+                height: 48px;
+                width: 154px;
+                border-radius: 32px;
+                padding: 12px 24px 12px 24px;
+            }
+            .enabled{
+                background-color: #800080 !important;
+                color: white !important;
+            }
+        }
+    }
+    .modalMessageContent{
+        display: flex;
+        i{
+            font-size: 24px;
+            margin-right: 1rem;
+        }
+        h1{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 36px;
+        }
+        p{
+            margin: 1rem 0;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color:rgba(102, 102, 102, 1) ;
+        }
+    }
+    .buttonModalMessage{
+        height: 40px;
+        width: 100%;
+        border-radius: 32px;
+        padding: 8px 16px 8px 16px;  
+        border: none;
+        background-color: #800080;
+        a{
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #F5F5F5;
+        }
+    }
+}
+@media screen and (min-width:1280px) {
+    .contactsSection{
+        .contactsContainer{
+            width: 936px;
+
+        }
+        .modalMessageContent{
+            width: 400px;
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    .contactsSection{
+        .contactsContainer{
+            width: 95%;
+
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    .contactsSection{
+        .backTitle{
+            h1{
+                font-size: 60px;
+            }
+        }
+        .firstCont{
+            .contactsInfo{
+                div{
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .contactsSection{
+        .backTitle{
+            h1{
+                font-size: 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .contactsSection{
+        .backLogo{
+            display: none;
+        }
+        .firstCont{
+            .contactsInfo{
+                div{
+                    p{
+                        font-size: 14px;
+
+                    }
+                }
+            }
+        }
+        .modalMessageContent{
+            width: 320px;
+            div{
+                p{
+                    margin-left: -40px;
+
+                }
+            }
+        }
+    }
+}

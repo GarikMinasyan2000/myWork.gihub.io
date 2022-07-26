@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import BackgroundSection from './backgroundSection/backgroundSection';
 import Calculator from './calculator/calculator';
-import ModalWindow from './modal/modalWindow';
 import Term from './termSection/termSection';
 import './creditPage.scss'
+import ModalWindow from '../modal/modalWindow';
 
 
 const CreditPage = () => {

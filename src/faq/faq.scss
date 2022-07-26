@@ -1,0 +1,134 @@
+.faqSection{
+    .faqBackground{
+        background: #F5F5F5;
+        background-image: url('../images/Intersect.png');
+        background-size: cover;
+        height: 304px;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        background-position:center;
+        .backTitle{
+            h1{
+                font-weight: 700;
+                line-height: 72px;
+                color: #800080;
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+        .backLogo{
+            font-size: 180px;
+            width: max-content;
+        }
+    }
+    .faqBody{
+        margin: 64px auto 96px auto;
+        h1{
+            //styleName: Large Heading/Small_bold;
+            font-family: Roboto;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 42px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+        .drop{
+            box-shadow: 0px 16px 32px 0px rgba(37, 37, 38, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin: 24px 0;
+            align-items: center;
+            cursor: pointer;
+            .flexFaq{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                svg{
+                    transition: .5s;
+                }
+                svg.active{
+                    transform: rotate(180deg);
+                    transition: .5s;
+                }
+                p{
+                    margin: 0;
+                    pointer-events: none;
+                    z-index: 23;
+                }
+                .title{
+                    font-family: Roboto;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: left;
+    
+                }
+            }
+            .down{
+                height: 0;
+                display: none;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-top: 22px;
+                margin-bottom: 0;
+                pointer-events: none;
+                cursor: default;
+                color: rgba(102, 102, 102, 1);
+            }
+            .down.activeDown{
+                height: auto;
+                display: block;
+                z-index: 251;
+            }
+        }
+    }
+}
+@media screen and(min-width:360px) {
+    .faqSection{
+        .faqBody{
+            width: 325px;
+        }
+        .flexFaq{
+            .title{
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and(min-width:768px) {
+    .faqSection{
+        .faqBody{
+            width: 704px;
+        }
+    }
+}
+
+@media screen and(min-width:1024px) {
+    .faqSection{
+        .faqBody{
+            width: 796px;
+            .flexFaq{
+                .title{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and(min-width:1280px) {
+    .faqSection{
+        .faqBody{
+            width: 748px;
+        }
+    }
+}
+
+
+

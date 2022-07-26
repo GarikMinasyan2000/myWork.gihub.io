@@ -1,6 +1,6 @@
 import React from 'react';
 import './termSection.scss'
-import logoPurple from '../../images/homePageImages/LogoPurple.png'
+import logoPurple from '../../images/LogoPurple.png'
 
 
 const Term = () => {

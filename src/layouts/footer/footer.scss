@@ -11,6 +11,7 @@
             letter-spacing: 0em;
             text-align: left;
         }
+        
     }
     .footerLogoSection{
         img{
@@ -37,6 +38,17 @@
         }
         .footerIcons{
             font-size: 20px;
+        }
+        .insta{
+                        
+            &:hover{
+                color: #C13584;    
+            }
+        }
+        .youtube{
+            &:hover{
+                color: red;
+            }
         }
     }
 }
