@@ -4,7 +4,7 @@ import illustration1 from '../images/illustration about 1.png'
 import illustration2 from '../images/illustration about 2.png'
 import illustration3 from '../images/illustration about 3.png'
 import Options from './options'
-const About = () => {
+const About = (props) => {
     return(
         <div className="aboutSection">
              <div className="aboutBackground container-fluid row justify-content-sm-between justify-content-xl-around">
@@ -64,7 +64,7 @@ const About = () => {
                     <button>Rate and quantity of cDram</button>
                 </div>
             </div>
-            <Options/>
+            <Options {...props}/>
         </div>
     )
 }

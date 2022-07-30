@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?fk310d');
-  src:  url('fonts/icomoon.eot?fk310d#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?fk310d') format('truetype'),
-    url('fonts/icomoon.woff?fk310d') format('woff'),
-    url('fonts/icomoon.svg?fk310d#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?tv55v2');
+  src:  url('fonts/icomoon.eot?tv55v2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tv55v2') format('truetype'),
+    url('fonts/icomoon.woff?tv55v2') format('woff'),
+    url('fonts/icomoon.svg?tv55v2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,7 +25,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-Illustration:before {
+.icon-ic_history_alt:before {
+  content: "\e92e";
+}
+.icon-ic_home_alt:before {
+  content: "\e92f";
+  color: #800080;
+}
+.icon-ic_money_insert:before {
+  content: "\e930";
+}
+.icon-ic_money_withdraw:before {
+  content: "\e931";
+}
+.icon-Illustration-faq:before {
   content: "\e92d";
   color: #800080;
 }

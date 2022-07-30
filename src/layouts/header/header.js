@@ -25,7 +25,7 @@ const Header = () => {
     useEffect(()=>{
         dispatch(getNotifCount(notifBody.length))
 
-        if (localStorage.getItem('loged') !== null) {
+        if ((localStorage.getItem('loged') || localStorage.getItem('logedVithMetamask')) !== null) {
             dispatch(loginStatusDisp(true))
         }
 
@@ -37,7 +37,13 @@ const Header = () => {
     const logOut = () => {
         dispatch(loginStatusDisp(false))
         setActiveProfile(false)
-        localStorage.removeItem('loged')
+        if (localStorage.getItem('loged')) {
+            localStorage.removeItem('loged')
+        }else{
+            localStorage.removeItem('logedVithMetamask')
+
+        }
+      
     }
     const activeDownProfile = () => {
         setActiveProfile(!activeProfile)
@@ -157,10 +163,10 @@ const Header = () => {
                                 {
                                 activeProfile &&
                                     <div className="downProfile ">
-                                        <div className="myAccount">
+                                            <Link className='links myAccount' state={{display: 'flex'}} to='myAccount'>
                                                 <span className="icon-ic_user user"></span>
                                                 <p>My account</p>
-                                            </div>
+                                            </Link>
                                             <div className="settings">
                                                 <span className="icon-ic_setting user"></span>
                                                 <p>Settings</p>

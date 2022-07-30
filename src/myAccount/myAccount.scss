@@ -1,0 +1,154 @@
+.myAccountSection{
+    background-color: #E5E5E5;
+    padding: 24px 0 96px 0;
+    
+    .myAccountBody{
+        background: rgba(240, 240, 240, 1);
+        box-shadow: 0px 16px 32px 0px rgba(37, 37, 38, 0.1);
+        height: 725px;
+        width: 1128px;
+        border-radius: 24px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        .left{
+            width: 264px;
+            .header{
+                display: flex;
+                justify-content: center;
+                padding-top: 35px;
+                flex-direction: column;
+                text-align: center;
+                .userIcon{
+                    
+                    &::before{
+                        border-radius: 50%;
+                        padding: 10px;
+                        font-size: 33px;
+                        background-color: #800080;
+                        color: white;
+                    }
+                }
+                .myaccount{
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    margin-top: 15px;
+                }
+                .idUser{
+                    color: #800080;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+                .status{
+                    .text{
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        color: rgba(143, 143, 143, 1);
+                    }
+                    .category{
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        color: #800080;
+                        margin-left: 3px;
+                    }
+                }
+                button{
+                    height: 40px;
+                    width: max-content;
+                    border-radius: 32px;
+                    padding: 8px 16px 8px 16px;
+                    background-color: #800080;
+                    color: white;
+                    border: none;
+                    margin: 8px 0 24px 0;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            .menu{
+
+                div{
+                    display: flex;
+                    align-items: center;
+                    padding: 16px;
+                    cursor: pointer;
+                    height: 56px;
+                    span{
+                        &::before{
+                            color: inherit;
+                            font-size: 24px;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-align: left;
+                        margin: auto 7px;
+                    }
+                }
+                div.active{
+                    box-shadow: 0px 16px 32px 0px rgba(37, 37, 38, 0.1);
+                    background-color: white;
+                    border-left: 4px solid #800080;
+                    color: #800080;
+                }
+            }
+        }
+        .right{
+            height: 725px;
+            width: 864px;
+            border-radius: 24px;
+            box-shadow: 0px 16px 32px 0px rgba(37, 37, 38, 0.1);
+            background: rgba(250, 250, 250, 1);
+        }
+    }
+    .exitModalContent{
+
+        h1{
+            font-family: Roboto;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+        p{
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(102, 102, 102, 1);
+        }
+        .btnContainer{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+            button{
+                border-radius: 32px;
+                padding: 8px 16px 8px 16px;
+                height: 40px;
+                width: max-content;
+                border: none;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: center;
+            }
+            .no{
+                background: rgba(245, 245, 245, 1);
+                margin-right: 20px;
+            }
+            .yes{
+                background: rgba(235, 66, 80, 1);
+                color: white;
+            }
+        }
+    }
+}

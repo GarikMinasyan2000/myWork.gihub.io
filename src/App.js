@@ -17,6 +17,7 @@ import Collateral from './collateral/collateral';
 import Contacts from './contacts/contacts'
 import Faq from './faq/faq';
 import About from './about/about';
+import MyAccount from './myAccount/myAccount';
 
 function App() {
 
@@ -46,7 +47,10 @@ function App() {
           <Route path='/colateral' element={<Collateral/>}></Route>
           <Route path='/contacts' element={<Contacts/>}></Route>
           <Route path='/faq' element={<Faq/>}></Route>
-          <Route path='/about' element={<About/>}></Route>
+          <Route path='/about' element={<About  scroll={scrollUp}/>}></Route>
+
+          <Route path='/myAccount' element={<MyAccount/>}></Route>
+
         </Routes>
       <Footer  scroll={scrollUp}/>
     </BrowserRouter>

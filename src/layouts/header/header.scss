@@ -50,8 +50,11 @@
                 .user{
                     font-size: 24px;
                     margin-right: 10px;
+                    &::before:hover{
+                        color: #800080;
+                    }
                     &::before{
-                        color: #666666;
+                        color: inherit;
                     }
                 }
                 p{
@@ -60,6 +63,10 @@
                     margin-bottom: 0;
                     line-height: 24px;
                 }
+                &:hover{
+                    color: #800080;
+                }
+                
             }
             .settings{
                 height: 56px;

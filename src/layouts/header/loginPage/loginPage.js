@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from "react-redux";
 import './loginPage.scss'
-import { loginStatusDisp } from '../../../redux/loginReducer';
+import { loginReducer, loginStatusDisp } from '../../../redux/loginReducer';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -71,7 +71,7 @@ const LoginPage = () => {
             window.ethereum.request({method:'eth_requestAccounts'})
             .then(result => {
                 dispatch(loginStatusDisp(true))
-                localStorage.setItem('loged',result)
+                localStorage.setItem('logedVithMetamask',result)
                 window.location.pathname = '/'
             })
             .catch(error => {
@@ -88,8 +88,10 @@ const LoginPage = () => {
         setIsPassword(!isPassword);
     }
     const [submited, setSubmited] = useState(false)
-    const submit = () => {
+
+    const login = () => {
         setSubmited(true)
+        dispatch(loginReducer(email.value,password.value))
     }
     const email = useInput('', { isEmpty: true, minLength: 1 })
     const password = useInput('', { isEmpty: true, minLegth: 8 })
@@ -135,7 +137,7 @@ const LoginPage = () => {
 
                 </div>
                     {submited && ( email.isEmpty || password.isEmpty) && <span className='errorText'>Fill in the required fields</span>}
-                <button onClick={submit} className='loginBtn'>Login</button>
+                <button onClick={login} className='loginBtn'>Login</button>
                 <button onClick={loginWithMetamask}>metamask</button>
 
             </div>

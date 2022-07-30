@@ -1,10 +1,13 @@
 import React from 'react';
 import './registerPage.scss'
 import {Link} from 'react-router-dom'
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect} from 'react';
+import { useDispatch ,useSelector} from 'react-redux';
+import { getMail, getPasword, registrationReducer } from '../../../redux/registrationReducer';
+import store from '../../../store/store';
 
 const RegisterPage = () => {
+    const dispatch = useDispatch()
     const [isPassword1,setIsPassword1] = useState(false)
     const [isPassword2,setIsPassword2] = useState(false)
     const handleSetPassword1 = () => {
@@ -93,16 +96,18 @@ const RegisterPage = () => {
     const getSecondValue = (e) => {
         let secValue = e.target.value
         setSecondValue(secValue)
-        // setIsChecked(true)
     }
 
 
     const check = (e) => {
         setIsChecked(!isChecked)
-        // console.log(isChecked);
     }
-    // if( !isChecked || !isStrong || !isMailValid || (firstValue !== secondValue))
-   
+
+    const registration = () => {
+        dispatch(getMail(eMailValue))
+        dispatch(getPasword(firstValue))
+        dispatch(registrationReducer(eMailValue,firstValue))
+    }
     return(
         <div className="regPage">
                 <Link className='verif' to='/verif'> verification</Link>
@@ -203,7 +208,7 @@ const RegisterPage = () => {
                     <p>Agree with <Link to='#'>Privacy policy</Link> and <Link to='#'>Terms</Link> of service</p>
                 </div>
                 <div className="btnContainer">
-                    <button  disabled={disabledd} className={disabledd ? '' : 'enabled'}> Registration</button>
+                    <button onClick={registration} disabled={disabledd} className={disabledd ? '' : 'enabled'}> Registration</button>
                 </div>
             </div>
 
